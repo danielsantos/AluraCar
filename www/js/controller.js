@@ -15,3 +15,10 @@ angular.module('starter')
 			'Fusca 1500'];	
 	
 });
+
+
+angular.module('starter')
+.controller('CarroEscolhidoController', function($scope) {
+	
+	
+});
