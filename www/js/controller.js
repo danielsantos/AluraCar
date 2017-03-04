@@ -18,7 +18,8 @@ angular.module('starter')
 
 
 angular.module('starter')
-.controller('CarroEscolhidoController', function($scope) {
+.controller('CarroEscolhidoController', function($stateParams, $scope) {
 	
+	$scope.carroEscolhido = $stateParams.carro;
 	
 });

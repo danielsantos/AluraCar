@@ -12,7 +12,7 @@ angular.module('starter')
 	})
 	
 	.state('carroescolhido', {
-		url : '/carroescolhido',
+		url : '/carroescolhido/:carro',
 		templateUrl : 'templates/carroEscolhido.html',
 		controller : 'CarroEscolhidoController'
 	});
