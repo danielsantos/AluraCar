@@ -43,6 +43,14 @@ angular.module('starter')
 	
 });
 
+angular.module('starter')
+.controller('FinalizarPedidoController', function($stateParams, $scope) {
+	
+	
+	
+});
+
+
 /*
 'BMW 120i',
 'Onix 1.6',
