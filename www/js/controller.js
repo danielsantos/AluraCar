@@ -46,7 +46,7 @@ angular.module('starter')
 angular.module('starter')
 .controller('FinalizarPedidoController', function($stateParams, $scope) {
 	
-	
+	$scope.carroFinalizado = angular.fromJson($stateParams.carro);
 	
 });
 
