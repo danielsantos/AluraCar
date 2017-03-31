@@ -44,9 +44,22 @@ angular.module('starter')
 });
 
 angular.module('starter')
-.controller('FinalizarPedidoController', function($stateParams, $scope) {
+.controller('FinalizarPedidoController', function($stateParams, $scope, $ionicPopup, $state) {
 	
 	$scope.carroFinalizado = angular.fromJson($stateParams.carro);
+	
+	$scope.finalizarPedido = function() {
+		
+		$ionicPopup.alert({
+			
+			title: 'Parabens',
+			template: 'Voce acaba de comprar um carro'
+			
+		}).then(function() {
+			$state.go('listagem');
+		});
+		
+	};
 	
 });
 
