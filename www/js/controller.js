@@ -1,6 +1,13 @@
 angular.module('starter')
-.controller('ListagemController', function($scope) {
+.controller('ListagemController', function($scope, CarroService) {
 	
+	CarroService.obterCarros().then( function (dados) {
+	
+		$scope.listaDeCarros = dados;
+	
+	});
+	
+	/*
 	$scope.listaDeCarros = [{"nome" : "BMW 120i", "preco" : 70000},
 							{"nome" : "Onix 1.6" , "preco" : 35000},
                             {"nome" : "Fiesta 2.0", "preco" : 52000},
@@ -13,6 +20,7 @@ angular.module('starter')
                             {"nome" : "Montana Cabine dupla", "preco" : 57000},
                             {"nome" : "Outlander 2.4" ,"preco" : 99000},
                             {"nome" : "Fusca 1500", "preco" : 6000}];	
+	*/
 
 });
 
