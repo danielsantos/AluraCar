@@ -98,7 +98,7 @@ angular.module('starter')
 });
 
 angular.module('starter')
-.controller('LoginController', function($scope, CarroService, $ionicPopup, $state) {
+.controller('LoginController', function($scope, CarroService, $ionicPopup, $state, $rootScope) {
 
 	$scope.login = {};
 
@@ -117,6 +117,8 @@ angular.module('starter')
 
 		CarroService.realizarLogin(dadosDoLogin).then(function(dados) {
 
+			$rootScope.usuario = dados.usuario;
+		
 			$state.go('app.listagem');
 
 		}, function(erro) {
@@ -132,6 +134,13 @@ angular.module('starter')
 
 	};
 
+});
+
+angular.module('starter')
+.controller('MenuController', function($scope, $rootScope) {
+	
+	$scope.usuarioLogado = $rootScope.usuario;
+	
 });
 
 

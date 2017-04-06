@@ -8,7 +8,8 @@ angular.module('starter')
 	.state('app', {
 		url : '/app',
 		templateUrl : 'templates/menu.html',
-		abstract : true
+		abstract : true,
+		controller : 'MenuController'
 	})
 
 	.state('app.listagem', {
@@ -37,7 +38,9 @@ angular.module('starter')
 		url : '/login',
 		templateUrl : 'templates/login.html',
 		controller : 'LoginController'
-	});
+	})
+	
+	
 
 
 });
