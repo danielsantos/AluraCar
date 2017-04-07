@@ -137,7 +137,14 @@ angular.module('starter')
 });
 
 angular.module('starter')
-.controller('MenuController', function($scope, $rootScope) {
+.controller('MenuController', function($rootScope, $scope) {
+	
+	$scope.usuarioLogado = $rootScope.usuario;
+	
+});
+
+angular.module('starter')
+.controller('PerfilController', function($rootScope, $scope) {
 	
 	$scope.usuarioLogado = $rootScope.usuario;
 	
