@@ -146,7 +146,27 @@ angular.module('starter')
 angular.module('starter')
 .controller('PerfilController', function($rootScope, $scope) {
 	
+	$scope.estaEditanto = false;
+	$scope.textoBotao = 'Editar';
+	
 	$scope.usuarioLogado = $rootScope.usuario;
+	
+	$scope.acaoBotao = function() {
+		
+		if ($scope.estaEditanto) {
+			
+		  $scope.estaEditanto = false;
+		  $scope.textoBotao = 'Editar';
+		  
+		} else {
+		  
+		  $scope.estaEditanto = true;
+		  $scope.textoBotao = 'Salvar';
+		  
+		  
+		}
+		
+	}
 	
 });
 
