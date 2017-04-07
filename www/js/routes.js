@@ -11,6 +11,15 @@ angular.module('starter')
 		abstract : true,
 		controller : 'MenuController'
 	})
+	
+	.state('app.perfil', {
+		url : '/perfil',
+		views : {
+				'menuContent' : {
+						templateUrl : 'templates/perfil.html'
+				}
+		}
+	})
 
 	.state('app.listagem', {
 		url : '/listagem',
@@ -38,7 +47,7 @@ angular.module('starter')
 		url : '/login',
 		templateUrl : 'templates/login.html',
 		controller : 'LoginController'
-	})
+	});
 	
 	
 
