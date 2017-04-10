@@ -2,38 +2,38 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   '--save',
-1 verbose cli   'angular-br-filters' ]
+1 verbose cli   'ionic-datepicker',
+1 verbose cli   '--save' ]
 2 info using npm@3.10.10
 3 info using node@v6.9.4
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
 6 silly install readLocalPackageData
-7 silly fetchPackageMetaData angular-br-filters
-8 silly fetchNamedPackageData angular-br-filters
-9 silly mapToRegistry name angular-br-filters
+7 silly fetchPackageMetaData ionic-datepicker
+8 silly fetchNamedPackageData ionic-datepicker
+9 silly mapToRegistry name ionic-datepicker
 10 silly mapToRegistry using default registry
 11 silly mapToRegistry registry https://registry.npmjs.org/
 12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'angular-br-filters',
+12 silly mapToRegistry   raw: 'ionic-datepicker',
 12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'angular-br-filters',
-12 silly mapToRegistry   name: 'angular-br-filters',
+12 silly mapToRegistry   escapedName: 'ionic-datepicker',
+12 silly mapToRegistry   name: 'ionic-datepicker',
 12 silly mapToRegistry   rawSpec: '',
 12 silly mapToRegistry   spec: 'latest',
 12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/angular-br-filters
-14 verbose request uri https://registry.npmjs.org/angular-br-filters
+13 silly mapToRegistry uri https://registry.npmjs.org/ionic-datepicker
+14 verbose request uri https://registry.npmjs.org/ionic-datepicker
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 10:51:11
-17 verbose request id d131188fcd7a9272
-18 http request GET https://registry.npmjs.org/angular-br-filters
+16 info attempt registry request try #1 at 16:03:56
+17 verbose request id 0085e8446fda0b7e
+18 http request GET https://registry.npmjs.org/ionic-datepicker
 19 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
-20 info attempt registry request try #2 at 10:51:21
-21 http request GET https://registry.npmjs.org/angular-br-filters
+20 info attempt registry request try #2 at 16:04:06
+21 http request GET https://registry.npmjs.org/ionic-datepicker
 22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, statusCode=407
-23 info attempt registry request try #3 at 10:52:21
-24 http request GET https://registry.npmjs.org/angular-br-filters
+23 info attempt registry request try #3 at 16:05:06
+24 http request GET https://registry.npmjs.org/ionic-datepicker
 25 silly fetchPackageMetaData Error: tunneling socket could not be established, statusCode=407
 25 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
 25 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
@@ -45,7 +45,7 @@
 25 silly fetchPackageMetaData     at readableAddChunk (_stream_readable.js:176:18)
 25 silly fetchPackageMetaData     at Socket.Readable.push (_stream_readable.js:134:10)
 25 silly fetchPackageMetaData     at TCP.onread (net.js:548:20)
-25 silly fetchPackageMetaData  error for angular-br-filters { Error: tunneling socket could not be established, statusCode=407
+25 silly fetchPackageMetaData  error for ionic-datepicker { Error: tunneling socket could not be established, statusCode=407
 25 silly fetchPackageMetaData     at ClientRequest.onConnect (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:165:19)
 25 silly fetchPackageMetaData     at ClientRequest.g (events.js:291:16)
 25 silly fetchPackageMetaData     at emitThree (events.js:116:13)
@@ -73,7 +73,7 @@
 30 verbose stack     at TCP.onread (net.js:548:20)
 31 verbose cwd C:\Users\daniel.rocha\Documents\Daniel\Estudo\Ionic\AluraCar
 32 error Windows_NT 10.0.14393
-33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "angular-br-filters"
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ionic-datepicker" "--save"
 34 error node v6.9.4
 35 error npm  v3.10.10
 36 error code ECONNRESET
