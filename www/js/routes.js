@@ -32,16 +32,24 @@ angular.module('starter')
 		}
 	})
 
-	.state('carroescolhido', {
+	.state('app.carroescolhido', {
 		url : '/carroescolhido/:carro',
-		templateUrl : 'templates/carroEscolhido.html',
-		controller : 'CarroEscolhidoController'
+		views : {
+			'menuContent' : {
+				templateUrl : 'templates/carroEscolhido.html',
+				controller : 'CarroEscolhidoController'
+			}
+		}
 	})
 
-	.state('finalizarpedido', {
+	.state('app.finalizarpedido', {
 		url : '/finalizarpedido/:carro',
-		templateUrl : 'templates/finalizarPedido.html',
-		controller : 'FinalizarPedidoController'
+		views : {
+			'menuContent' : {
+				templateUrl : 'templates/finalizarPedido.html',
+				controller : 'FinalizarPedidoController'
+			}
+		}
 	})
 
 	.state('login', {
